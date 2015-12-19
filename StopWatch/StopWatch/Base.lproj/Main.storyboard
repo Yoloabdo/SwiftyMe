@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StopWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxb-Is-TOm">
+                                <rect key="frame" x="249" y="264" width="102" height="71"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jPF-jV-eZg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zov-eS-x1H">
+                                <rect key="frame" x="249" y="348" width="102" height="71"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="621-kr-F6q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwb-SC-376">
+                                <rect key="frame" x="199" y="28" width="202" height="58"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="OZ4-tO-hvu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vwb-SC-376" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4EB-yK-zBe"/>
+                            <constraint firstItem="Vwb-SC-376" firstAttribute="centerX" secondItem="Xxb-Is-TOm" secondAttribute="centerX" id="4LJ-2d-QPD"/>
+                            <constraint firstItem="Zov-eS-x1H" firstAttribute="centerX" secondItem="Xxb-Is-TOm" secondAttribute="centerX" id="BgO-Ts-4Rg"/>
+                            <constraint firstItem="Zov-eS-x1H" firstAttribute="height" secondItem="Xxb-Is-TOm" secondAttribute="height" id="CmN-J2-1iK"/>
+                            <constraint firstItem="Xxb-Is-TOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JlR-Mh-kQb"/>
+                            <constraint firstItem="Zov-eS-x1H" firstAttribute="width" secondItem="Xxb-Is-TOm" secondAttribute="width" id="Ugb-51-G11"/>
+                            <constraint firstItem="Vwb-SC-376" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dqH-4Z-pdK"/>
+                            <constraint firstItem="Xxb-Is-TOm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fpF-ka-nPl"/>
+                            <constraint firstItem="Zov-eS-x1H" firstAttribute="top" secondItem="Xxb-Is-TOm" secondAttribute="bottom" constant="13" id="i4p-T7-9hf"/>
+                            <constraint firstItem="Vwb-SC-376" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jYv-yO-w5l"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4EB-yK-zBe"/>
+                                <exclude reference="dqH-4Z-pdK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="timeElapsed" destination="Vwb-SC-376" id="Czi-uo-6hv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
