@@ -22,11 +22,16 @@ class ViewController: UIViewController {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
+        let touch = touches.first! as UITouch
+        let point = touch.locationInView(view)
         
     }
 
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
 
+        let touch = touches.first! as UITouch
+        let point = touch.locationInView(view)
+        
     }
 
 }
