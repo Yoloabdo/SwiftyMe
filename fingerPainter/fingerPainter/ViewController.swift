@@ -30,7 +30,14 @@ class ViewController: UIViewController {
         let touch = touches.first! as UITouch
         start = touch.locationInView(canavas)
     }
+    @IBAction func clearCanavas(sender: AnyObject) {
+        canavas.image = nil
+    }
 
+    @IBAction func shareView(sender: AnyObject) {
+        let activityController = UIActivityViewController(activityItems: ["Check out our really cool app", canavas.image!], applicationActivities: nil)
+        presentViewController(activityController, animated: true, completion: nil)
+    }
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
 
         let touch = touches.first! as UITouch
