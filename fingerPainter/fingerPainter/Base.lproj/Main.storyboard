@@ -24,22 +24,24 @@
                                     <barButtonItem title="Item" id="1za-Gg-yeJ"/>
                                 </items>
                             </toolbar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2V-dq-Qa1" customClass="CanvasView" customModule="fingerPainter" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-ez-jCb">
                                 <rect key="frame" x="28" y="28" width="544" height="520"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="r2V-dq-Qa1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6f1-6e-Isl"/>
-                            <constraint firstItem="r2V-dq-Qa1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="T6i-PM-xb4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="r2V-dq-Qa1" secondAttribute="trailing" constant="8" id="TuS-Jb-X0v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AZY-ez-jCb" secondAttribute="trailing" constant="8" id="0HF-zE-wDB"/>
+                            <constraint firstItem="AZY-ez-jCb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9aK-nY-Bjj"/>
+                            <constraint firstItem="L2O-ia-fzO" firstAttribute="top" secondItem="AZY-ez-jCb" secondAttribute="bottom" constant="8" id="OY5-34-pzt"/>
                             <constraint firstItem="L2O-ia-fzO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="i36-7N-oV3"/>
+                            <constraint firstItem="AZY-ez-jCb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="juZ-VG-Sq5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L2O-ia-fzO" secondAttribute="bottom" id="qBG-bV-L01"/>
-                            <constraint firstItem="L2O-ia-fzO" firstAttribute="top" secondItem="r2V-dq-Qa1" secondAttribute="bottom" constant="8" id="qKD-eu-5l3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L2O-ia-fzO" secondAttribute="trailing" constant="-20" id="yOe-jz-VJX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="canavas" destination="AZY-ez-jCb" id="mtP-4a-eJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

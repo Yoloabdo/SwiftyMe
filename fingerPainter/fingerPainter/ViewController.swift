@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var canavas: UIImageView!
+    
+    var start:CGPoint?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,16 +28,23 @@ class ViewController: UIViewController {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         let touch = touches.first! as UITouch
-        let point = touch.locationInView(view)
-        
+        start = touch.locationInView(canavas)
     }
 
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
 
         let touch = touches.first! as UITouch
-        let point = touch.locationInView(view)
+
+        let end = touch.locationInView(canavas)
+        if let start = self.start{
+            drawFromPoint(start, toPoint: end)
+        }
         
+        start = end
     }
 
+    func drawFromPoint(start: CGPoint, toPoint end: CGPoint){
+        
+    }
 }
 

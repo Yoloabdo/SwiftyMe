@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		509DE1571C25CCE300E4ECAD /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509DE1561C25CCE300E4ECAD /* CanvasView.swift */; };
 		50A3EDD01C13A6050083512A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3EDCF1C13A6050083512A /* AppDelegate.swift */; };
 		50A3EDD21C13A6050083512A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3EDD11C13A6050083512A /* ViewController.swift */; };
 		50A3EDD51C13A6050083512A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A3EDD31C13A6050083512A /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		509DE1561C25CCE300E4ECAD /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		50A3EDCC1C13A6050083512A /* fingerPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fingerPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A3EDCF1C13A6050083512A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50A3EDD11C13A6050083512A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				50A3EDCF1C13A6050083512A /* AppDelegate.swift */,
 				50A3EDD11C13A6050083512A /* ViewController.swift */,
 				50A3EDD31C13A6050083512A /* Main.storyboard */,
-				509DE1561C25CCE300E4ECAD /* CanvasView.swift */,
 				50A3EDD61C13A6050083512A /* Assets.xcassets */,
 				50A3EDD81C13A6050083512A /* LaunchScreen.storyboard */,
 				50A3EDDB1C13A6050083512A /* Info.plist */,
@@ -141,7 +138,6 @@
 			files = (
 				50A3EDD21C13A6050083512A /* ViewController.swift in Sources */,
 				50A3EDD01C13A6050083512A /* AppDelegate.swift in Sources */,
-				509DE1571C25CCE300E4ECAD /* CanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
