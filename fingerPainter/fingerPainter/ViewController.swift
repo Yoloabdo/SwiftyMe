@@ -44,7 +44,23 @@ class ViewController: UIViewController {
     }
 
     func drawFromPoint(start: CGPoint, toPoint end: CGPoint){
-        
+        // set the context to that of an image  
+        UIGraphicsBeginImageContext(canavas.frame.size)
+        let context = UIGraphicsGetCurrentContext()
+        // draw the existing image onto the current context  
+        canavas.image?.drawInRect(CGRect(x: 0, y: 0, width: canavas.frame.size.width, height: canavas.frame.size.height))
+        // draw the new line segment  
+        CGContextSetLineWidth(context, 5)
+        CGContextSetStrokeColorWithColor(context,UIColor.magentaColor().CGColor)
+        CGContextBeginPath(context)
+        CGContextMoveToPoint(context, start.x, start.y)
+        CGContextAddLineToPoint(context, end.x, end.y)
+        CGContextStrokePath(context)
+        // obtain a UIImage object from the context
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        // Set the UIImageView's image to the new, generated image  
+        canavas.image = newImage
     }
 }
 
