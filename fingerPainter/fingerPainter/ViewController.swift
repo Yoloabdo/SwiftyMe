@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func shareView(sender: AnyObject) {
+        
         let activityController = UIActivityViewController(activityItems: ["Check out our really cool app", canavas.image!], applicationActivities: nil)
         presentViewController(activityController, animated: true, completion: nil)
     }
