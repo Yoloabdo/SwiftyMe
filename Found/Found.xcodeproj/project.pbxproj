@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502072071C30995A0082E9AE /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502072061C30995A0082E9AE /* Pin.swift */; };
 		504B360F1C3020E8001E9320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504B360E1C3020E8001E9320 /* AppDelegate.swift */; };
 		504B36111C3020E8001E9320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504B36101C3020E8001E9320 /* ViewController.swift */; };
 		504B36141C3020E8001E9320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504B36121C3020E8001E9320 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		502072061C30995A0082E9AE /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		504B360B1C3020E8001E9320 /* Found.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Found.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504B360E1C3020E8001E9320 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		504B36101C3020E8001E9320 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				504B360E1C3020E8001E9320 /* AppDelegate.swift */,
 				504B36101C3020E8001E9320 /* ViewController.swift */,
 				504B36121C3020E8001E9320 /* Main.storyboard */,
+				502072061C30995A0082E9AE /* Pin.swift */,
 				504B36151C3020E8001E9320 /* Assets.xcassets */,
 				504B36171C3020E8001E9320 /* LaunchScreen.storyboard */,
 				504B361A1C3020E8001E9320 /* Info.plist */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502072071C30995A0082E9AE /* Pin.swift in Sources */,
 				504B36111C3020E8001E9320 /* ViewController.swift in Sources */,
 				504B360F1C3020E8001E9320 /* AppDelegate.swift in Sources */,
 			);
@@ -289,6 +293,7 @@
 				504B361F1C3020E8001E9320 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

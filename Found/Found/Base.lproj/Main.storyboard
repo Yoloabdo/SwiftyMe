@@ -18,21 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9BI-oR-q7U">
-                                <rect key="frame" x="28" y="28" width="544" height="564"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xoq-tu-wP2">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Add" id="LDJ-Ap-E76">
+                                        <connections>
+                                            <action selector="dropPin:" destination="BYZ-38-t0r" id="hu6-8P-LzQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BI-oR-q7U">
+                                <rect key="frame" x="28" y="28" width="544" height="528"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="528" id="Amj-Xx-3EH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DGg-PG-epV"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9BI-oR-q7U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Nyb-QT-Nd0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9BI-oR-q7U" secondAttribute="bottom" constant="8" id="oly-Ev-Uje"/>
-                            <constraint firstItem="9BI-oR-q7U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="sHo-ZM-Tie"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9BI-oR-q7U" secondAttribute="trailing" constant="8" id="yJd-zn-598"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xoq-tu-wP2" secondAttribute="trailing" constant="-20" id="4fx-gt-L43"/>
+                            <constraint firstItem="9BI-oR-q7U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5jI-DL-OIF"/>
+                            <constraint firstItem="9BI-oR-q7U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F5X-MQ-lGf"/>
+                            <constraint firstItem="9BI-oR-q7U" firstAttribute="centerX" secondItem="Xoq-tu-wP2" secondAttribute="centerX" id="VMW-p2-Ozs"/>
+                            <constraint firstItem="9BI-oR-q7U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Z0m-VN-4eG"/>
+                            <constraint firstItem="9BI-oR-q7U" firstAttribute="bottom" secondItem="Xoq-tu-wP2" secondAttribute="top" id="hUB-Cd-F55"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xoq-tu-wP2" secondAttribute="bottom" id="s2t-z9-Huy"/>
+                            <constraint firstItem="Xoq-tu-wP2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="y2K-Jq-xUj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="9BI-oR-q7U" id="p1D-kc-GqJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="460" y="316"/>
         </scene>
     </scenes>
 </document>
