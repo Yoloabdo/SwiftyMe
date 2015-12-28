@@ -8,10 +8,15 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    
+    var pin: Pin?
+    let locationManager = CLLocationManager()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +41,18 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
 
     @IBAction func dropPin(sender: UIBarButtonItem) {
-        let pin = Pin(coordinate: mapView.userLocation.coordinate)
-        mapView.addAnnotation(pin)
+        pin = Pin(coordinate: mapView.userLocation.coordinate)
+        mapView.addAnnotation(pin!)
+    }
+    @IBAction func deletePin(sender: UIBarButtonItem) {
+        if let pinOnMap = pin{
+            mapView.removeAnnotation(pinOnMap)
+        }
+    }
+    @IBAction func shareLocation(sender: UIBarButtonItem) {
+    // ToBeDone: implement sharing map location, if not share image capture from view
+        
+        let activityController = UIActivityViewController(activityItems: ["Check out our really cool app"], applicationActivities: nil)
+        presentViewController(activityController, animated: true, completion: nil)
     }
 }
