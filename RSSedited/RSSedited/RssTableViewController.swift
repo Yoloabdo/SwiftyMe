@@ -79,22 +79,7 @@ class RssTableViewController: UITableViewController, MWFeedParserDelegate {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let item = feedItems[indexPath.row] as MWFeedItem
-        let browser = KINWebBrowserViewController()
-        let url = NSURL(string: item.link)
-        
-        browser.loadURL(url)
-        
-        let myWebView:WKWebView
-        
-        let requestObj = NSURLRequest(URL: url!);
-        myWebView.loadRequest(requestObj)
-        let _: UINavigationController
-        
-        self.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
-    }
-
+   
     
     /*
     // Override to support conditional editing of the table view.

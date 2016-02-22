@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OfW-zp-2M1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Table View Controller-->
+        <scene sceneID="49E-qf-nEJ">
+            <objects>
+                <tableViewController id="OfW-zp-2M1" customClass="MainTableViewController" customModule="Tech_echo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="322" sectionHeaderHeight="18" sectionFooterHeight="18" id="5Bv-eu-b25">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="322" id="6bH-ne-mDd" customClass="ArticleTableViewCell" customModule="Tech_echo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49.5" width="600" height="322"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6bH-ne-mDd" id="Jty-8c-frx">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="321.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UTI-eI-MO9">
+                                            <rect key="frame" x="8" y="8" width="584" height="306"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Category" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-3B-3lA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sk4-qE-4vm">
+                                                    <rect key="frame" x="0.0" y="31" width="584" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="7yq-kk-R9v">
+                                                    <rect key="frame" x="0.0" y="62" width="584" height="81"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Small describtion of the article viewed to define it." textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="T00-Nu-7dq">
+                                                    <rect key="frame" x="0.0" y="143" width="584" height="132"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="اعرف أكثر .." borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVt-o9-ix9">
+                                                    <rect key="frame" x="0.0" y="275" width="584" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T00-Nu-7dq" firstAttribute="leading" secondItem="UTI-eI-MO9" secondAttribute="leading" id="2Zl-Gh-rzs"/>
+                                                <constraint firstItem="uMx-3B-3lA" firstAttribute="leading" secondItem="UTI-eI-MO9" secondAttribute="leading" id="2fJ-EG-3Tt"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sk4-qE-4vm" secondAttribute="trailing" id="3N2-6C-O0p"/>
+                                                <constraint firstItem="7yq-kk-R9v" firstAttribute="leading" secondItem="UTI-eI-MO9" secondAttribute="leading" id="4S8-10-Jbm"/>
+                                                <constraint firstItem="JVt-o9-ix9" firstAttribute="leading" secondItem="UTI-eI-MO9" secondAttribute="leading" id="JI1-DJ-wED"/>
+                                                <constraint firstAttribute="trailing" secondItem="T00-Nu-7dq" secondAttribute="trailing" id="JOr-5P-C6B"/>
+                                                <constraint firstAttribute="trailing" secondItem="uMx-3B-3lA" secondAttribute="trailing" id="c28-aD-lja"/>
+                                                <constraint firstAttribute="trailing" secondItem="JVt-o9-ix9" secondAttribute="trailing" id="etT-DK-7J9"/>
+                                                <constraint firstAttribute="trailing" secondItem="7yq-kk-R9v" secondAttribute="trailing" id="iXD-fX-AyW"/>
+                                                <constraint firstItem="Sk4-qE-4vm" firstAttribute="leading" secondItem="UTI-eI-MO9" secondAttribute="leading" id="ixe-QL-Kef"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="UTI-eI-MO9" secondAttribute="bottom" id="5wQ-Us-nPX"/>
+                                        <constraint firstItem="UTI-eI-MO9" firstAttribute="top" secondItem="Jty-8c-frx" secondAttribute="topMargin" id="KBQ-Wx-dxN"/>
+                                        <constraint firstItem="UTI-eI-MO9" firstAttribute="leading" secondItem="Jty-8c-frx" secondAttribute="leadingMargin" id="f4z-hV-IFh"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="UTI-eI-MO9" secondAttribute="trailing" id="jhZ-kD-VcD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="articleCategory" destination="uMx-3B-3lA" id="rW4-b0-mZO"/>
+                                    <outlet property="articleDescription" destination="T00-Nu-7dq" id="wdS-yb-dGv"/>
+                                    <outlet property="articleImage" destination="7yq-kk-R9v" id="B2d-by-52A"/>
+                                    <outlet property="articleTitle" destination="Sk4-qE-4vm" id="Klm-9O-arg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OfW-zp-2M1" id="bNa-qW-lkt"/>
+                            <outlet property="delegate" destination="OfW-zp-2M1" id="hLS-dF-DHE"/>
+                        </connections>
+                    </tableView>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="zk0-cu-c1z">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yP5-lp-9wc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="164" height="79"/>
+    </resources>
+</document>
